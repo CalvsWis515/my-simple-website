@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Mobile Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website!</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Editable Text Section</h2>
+            <p id="editable-text">This is a sample text. You can change this text easily by editing the HTML code here.</p>
+        </section>
+
+        <section class="image-section">
+            <h2>Click the Image to Change</h2>
+            
+            <!-- Image 1 -->
+            <a href="javascript:void(0)" id="open-modal">
+                <img id="image" src="pablo.jpg" alt="Image 1" />
+            </a>
+            <p>Click the image to switch to the second image.</p>
+        </section>
+    </main>
+
+    <!-- Modal for the popup image -->
+    <div id="image-modal" class="modal">
+        <span class="close" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Simple Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
